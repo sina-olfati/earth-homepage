@@ -67,6 +67,31 @@ background: rgb(180, 180, 180);
 .earth-pack .earth:hover{
     filter: grayscale(100%);
 }
+
+.earth-pack .moon{
+    width: 150px;
+    position: absolute;
+    animation: moon 10s linear infinite;
+}
+
+@keyframes moon {
+    0% {
+        width: 0px;
+        top: 45%;
+        left: 0%;
+        }
+    30% {
+        width: 150px;
+        top: 50%;
+        left: 35%;
+    }
+    60% {
+        width: 0px;
+        top: 48%;
+        left: 100%;
+    }
+    100% {width: 0;}
+}
   
 @media  screen and (max-width:990px) {
     .menu-div{
@@ -75,4 +100,3 @@ background: rgb(180, 180, 180);
     left: -40px;
     }
 }
-
