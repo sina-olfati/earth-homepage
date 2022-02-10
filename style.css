@@ -37,6 +37,7 @@ background: rgb(180, 180, 180);
 /* center earth */
 /* $$ if display is on flex and you centerelize the contents, if you put earths position on absolute, it will stay in the middle */
 .earth-pack{
+    border-radius: 250px;
     position: relative;
     top: 105px;
     display: flex;
@@ -49,7 +50,7 @@ background: rgb(180, 180, 180);
     border-radius: 250px;
     animation: rotate 60s linear infinite;
 }
-/* if you dont put the border-radius, the area of earth that if you hover it, earth will be gray, is a square but now its a circle. put a border to underestand it */
+/* if you dont put the border-radius, the area of earth that if you hover it, earth will be gray, is a square but now its a circle. put a border to underestand it -- also the .earth-pack{} rule*/
 .earth-pack .earth{
     position: absolute;
     width: 350px;
@@ -67,5 +68,11 @@ background: rgb(180, 180, 180);
     filter: grayscale(100%);
 }
   
-
+@media  screen and (max-width:990px) {
+    .menu-div{
+    position: absolute;
+    top: 50px;
+    left: -40px;
+    }
+}
 
