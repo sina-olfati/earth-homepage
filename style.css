@@ -1,0 +1,71 @@
+body{
+    background-color: #000;
+display: flex;
+justify-content: center;
+}
+
+/* menu */
+.menu-div{position: absolute;
+    top: 100px;
+    left: 20px;}
+
+.menu-ul {
+width: 320px;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: nowra;
+border: soli white;
+}
+
+li {
+    margin: 0 15px;
+    padding: 0 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 200ms;
+    color: aliceblue;
+    font-size: large;
+}
+li:hover {
+margin: 0 20px;
+color: rgb(56, 56, 56);
+background: rgb(180, 180, 180);
+}
+
+/* center earth */
+/* $$ if display is on flex and you centerelize the contents, if you put earths position on absolute, it will stay in the middle */
+.earth-pack{
+    position: relative;
+    top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth-pack .space{
+    width: 500px;
+    border-radius: 250px;
+    animation: rotate 60s linear infinite;
+}
+/* if you dont put the border-radius, the area of earth that if you hover it, earth will be gray, is a square but now its a circle. put a border to underestand it */
+.earth-pack .earth{
+    position: absolute;
+    width: 350px;
+    border-radius: 175px;
+    transition: 0.5s;
+} 
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+  }
+  
+/* this hue-rotate is new */
+.earth-pack .earth:hover{
+    filter: grayscale(100%);
+}
+  
+
+
