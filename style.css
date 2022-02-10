@@ -69,7 +69,7 @@ background: rgb(180, 180, 180);
 }
 
 .earth-pack .moon{
-    width: 150px;
+    border-radius: 50%;
     position: absolute;
     animation: moon 10s linear infinite;
 }
@@ -78,17 +78,27 @@ background: rgb(180, 180, 180);
     0% {
         width: 0px;
         top: 45%;
-        left: 0%;
+        left: 19%;
         }
-    30% {
-        width: 150px;
+    20% {
+        width: 60px;
+        top: 48%;
+        left: 8%;
+    }
+    40% {
+        width: 120px;
         top: 50%;
         left: 35%;
     }
     60% {
-        width: 0px;
+        width: 60px;
         top: 48%;
-        left: 100%;
+        left: 80%;
+    }
+    80% {
+        width: 0px;
+        top: 45%;
+        left: 81%;
     }
     100% {width: 0;}
 }
