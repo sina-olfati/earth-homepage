@@ -2,6 +2,35 @@ body{
     background-color: #000;
 display: flex;
 justify-content: center;
+text-align: center;
+}
+
+/* logo */
+.logo{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-block;
+}
+
+.logo img{
+    width: 70px;
+    border-radius: 35px 0 35px 35px;
+    transition: 0.5s;
+}
+
+.logo img:hover{
+    box-shadow: 7px -7px 5px rgb(130, 0, 0);
+    background-color: rgb(130, 0, 0);
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo p{
+    color: white;
 }
 
 /* menu */
@@ -108,5 +137,14 @@ background: rgb(180, 180, 180);
     position: absolute;
     top: 50px;
     left: -40px;
+    }
+
+    .logo{
+        top: 20px;
+        right: 15px;
+        font-size: small;
+    }
+    .logo img{
+        display: none;
     }
 }
